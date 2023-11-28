@@ -1,7 +1,7 @@
 ---
 - name: update web, nfs and db servers
   hosts: webservers, nfs, db
-  become: yes
+  become: true
   tasks:
     - name: ensure wireshark is at the latest version
       yum:
@@ -10,7 +10,7 @@
    
 - name: update lb server
   hosts: lb
-  become: yes
+  become: true
   tasks:
     - name: Update apt repo
       apt: 
@@ -21,9 +21,4 @@
         name: wireshark
         state: latest
 
-  tasks:
-   - name: create directory
-     mkdir:
-       path: /home/ubuntu/ansible-jobs
-       state: directory
 
