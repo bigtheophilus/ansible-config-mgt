@@ -22,3 +22,13 @@
       apt:
         name: wireshark
         state: latest
+
+name: Create a directory if it does not exist
+  # ansible.builtin.file:
+    path: /etc/ansible/ansible-jobs
+    state: directory
+    
+    name: Create a file if it does not exist
+  # ansible.builtin.file:
+    path: /etc/ansible/ansible-jobs/testing.yml
+    state: present
