@@ -8,7 +8,6 @@
       yum:
         name: wireshark
         state: latest
-   
 
 - name: update lb server
   hosts: lb
@@ -18,18 +17,17 @@
       apt: 
         update_cache: yes
 
-    - name: ensure wireshark is at the latest version
-      apt:
+   - name: ensure wireshark is at the latest version
+     apt:
         name: wireshark
         state: latest
 
   tasks: 
     - name: Create a directory if it does not exist
-  # ansible.builtin.file:
-  path: /etc/ansible/ansible-jobs
-    state: directory
+        path: /home/ubuntu/ansible-jobs
+        state: directory
+
   tasks:     
     - name: Create a file if it does not exist
-  # ansible.builtin.file:
-    path: /etc/ansible/ansible-jobs/testing.yml
-    state: file
+        path: /home/ubuntu/ansible-jobs/testing.yml
+        state: file
