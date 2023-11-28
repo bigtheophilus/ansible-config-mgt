@@ -26,3 +26,7 @@
         path: /home/ubuntu/ansible-testing
         state: directory
 
+    - name: Touch a file, 
+      ansible.builtin.file:
+        path: /home/ubuntu/ansible-testing/testing.txt
+        state: touch
