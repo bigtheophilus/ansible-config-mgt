@@ -1,4 +1,3 @@
-
 ---
 - name: update web, nfs and db servers
   hosts: webservers, nfs, db
@@ -8,6 +7,7 @@
       yum:
         name: wireshark
         state: latest
+   
 
 - name: update lb server
   hosts: lb
@@ -17,17 +17,20 @@
       apt: 
         update_cache: yes
 
-   - name: ensure wireshark is at the latest version
-     apt:
+    - name: ensure wireshark is at the latest version
+      apt:
         name: wireshark
         state: latest
 
-  tasks: 
-    - name: Create a directory if it does not exist
-        path: /home/ubuntu/ansible-jobs
-        state: directory
+  tasks:
+   - name: create directory
+     mkdir:
+       path: /home/ubuntu/ansible-jobs
+       state: directory
 
-  tasks:     
-    - name: Create a file if it does not exist
-        path: /home/ubuntu/ansible-jobs/testing.yml
-        state: file
+  tasks:
+   - name: create a file
+     touch:
+      path: /home/ubuntu/ansible-jobs/testing.yml
+      state: file
+                 
