@@ -23,13 +23,13 @@
         name: wireshark
         state: latest
 
-tasks: 
-  - name: Create a directory if it does not exist
+  tasks: 
+    - name: Create a directory if it does not exist
   # ansible.builtin.file:
   path: /etc/ansible/ansible-jobs
     state: directory
-tasks:     
-  - name: Create a file if it does not exist
+  tasks:     
+    - name: Create a file if it does not exist
   # ansible.builtin.file:
     path: /etc/ansible/ansible-jobs/testing.yml
-    state: present
+    state: file
