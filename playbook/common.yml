@@ -27,9 +27,3 @@
        path: /home/ubuntu/ansible-jobs
        state: directory
 
-  tasks:
-   - name: create a file
-     touch:
-      path: /home/ubuntu/ansible-jobs/testing.yml
-      state: file
-
