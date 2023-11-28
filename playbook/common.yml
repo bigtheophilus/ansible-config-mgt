@@ -21,4 +21,8 @@
         name: wireshark
         state: latest
 
+    - name: Create a directory if it does not exist
+      ansible.builtin.file:
+        path: /home/ubuntu/ansible-testing
+        state: directory
 
