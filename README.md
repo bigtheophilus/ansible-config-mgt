@@ -10,9 +10,4 @@
 
 # change
 
-# change testing
-# testing
 
-# testing for bugs
-# still checking
-# resolving
