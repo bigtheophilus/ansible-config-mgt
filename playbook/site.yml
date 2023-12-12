@@ -7,8 +7,9 @@
 #- import_playbook: ../static-assignments/common-del.yml
 # samples
 
-#- hosts: all
-#- import_playbook: ../static-assignments/common.yml
+- hosts: db
+- name: installing db
+- import_playbook: ../static-assignments/db.yml
 
 #- hosts: uat-webservers
 #git- import_playbook: ../static-assignments/uat-webservers.yml
@@ -22,8 +23,8 @@
   tags:
     - always
 
--  hosts: webservers
-- name: Webserver assignment
-  import_playbook: ../static-assignments/webservers.yml
+#-  hosts: webservers
+#- name: Webserver assignment
+ # import_playbook: ../static-assignments/webservers.yml
 
 
