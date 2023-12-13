@@ -1,7 +1,10 @@
 
 
 ```
-- hosts: database
+
+- hosts: db
   roles:
     - role: mysql
       become: yes
+
+
