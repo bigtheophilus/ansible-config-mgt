@@ -1,6 +1,6 @@
 
 
-```yaml
+```
 - hosts: database
   roles:
     - role: mysql
