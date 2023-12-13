@@ -1,7 +1,4 @@
 
-
-```
-
 hosts: db
   roles:
     - role: mysql
