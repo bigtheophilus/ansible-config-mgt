@@ -19,9 +19,9 @@
 - name: Include dynamic variables 
    #tasks:
    #import_playbook: ../static-assignments/db.yml 
-   include: ../dynamic-assignments/env-vars.yml
-   tags:
-    - always
+   #include: ../dynamic-assignments/env-vars.yml
+   #tags:
+    #- always
 
 #-  hosts: webservers
 #- name: Webserver assignment
