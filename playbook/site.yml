@@ -17,8 +17,8 @@
 
 - hosts: all
 - name: Include dynamic variables 
-   tasks:
-   import_playbook: ../static-assignments/db.yml 
+   #tasks:
+   #import_playbook: ../static-assignments/db.yml 
    include: ../dynamic-assignments/env-vars.yml
    tags:
     - always
