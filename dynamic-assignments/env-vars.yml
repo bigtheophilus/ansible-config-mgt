@@ -1,4 +1,3 @@
-
 ---
 - name: collate variables from env specific file, if it exists
   hosts: all
