@@ -15,7 +15,7 @@
     - always 
     
 - hosts: db
-- name: installing db
+#- name: installing db
 - import_playbook: ../static-assignments/db.yml
 
 #- hosts: uat-webservers
