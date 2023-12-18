@@ -18,11 +18,11 @@
     - always
 
 
-- hosts: uat-webservers
-- import_playbook: ../static-assignments/uat-webservers.yml
+# - hosts: uat-webservers
+# - import_playbook: ../static-assignments/uat-webservers.yml
 
-- hosts: db
-- import_playbook: ../static-assignments/database.yml
+# - hosts: db
+# - import_playbook: ../static-assignments/database.yml
 
 - hosts: lb
 - name: Loadbalancers assignment
