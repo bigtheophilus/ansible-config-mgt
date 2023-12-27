@@ -1,7 +1,7 @@
 ---
 
 enable_nginx_lb: true
-load_balancer_is_required: true
+load_balancer_is_required: false
 
 # Used only for Debian/Ubuntu installation, as the -t option for apt.
 nginx_default_release: ""

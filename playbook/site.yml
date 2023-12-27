@@ -26,6 +26,6 @@
 
 - hosts: lb
 - name: Loadbalancers assignment
-  import_playbook: ../static-assignments/nginx-lb.yml
+  import_playbook: ../static-assignments/apache-lb.yml
   when: load_balancer_is_required 
 
